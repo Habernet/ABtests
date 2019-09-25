@@ -130,10 +130,11 @@ $(window).scroll(function() {
 // Overwatch example
 // grab the text of div class 'h4 hero-bio-quote'
 var heroQuote = $(".hero-bio-quote").text();
-// Create a h3 to insert between the ability name and the hero name
+console.log(heroQuote);
+// Create an h3 to insert between the ability name and the hero name
 var quoteToAdd = $("<h3>")
-  .text(heroQuote)
-  .css({ "font-family": "Big Noodle Too,impact,sans-serif" });
+  .addClass("hero-bio-quote")
+  .text(heroQuote);
 // Insert this div onto the dom
 $(".hero-name").append(quoteToAdd);
 
